@@ -16,8 +16,8 @@ Instructions on how to run the test:
 Steps:
 Dependencies= Node_modules
 
-Insert here how to install npm install
-1. Start the API server
-2. Copy the Server Address into the config.js file in the API_URL field
-3. Use command npx jest tests/(Insert desired test here Example: putHandlers.test.js)
-4. Execute command and run the test
+1. npm install
+2. Start the API server
+3. Copy the Server Address into the config.js file in the API_URL field
+4. Use command npx jest tests/(Insert desired test here Example: putHandlers.test.js)
+5. Execute command and run the test
