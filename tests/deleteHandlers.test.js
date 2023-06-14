@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 
 const config = require('../config');
 
@@ -9,7 +10,6 @@ const requestBody =
 
 test('status code should receive 200 in the response code when a new kit is created successfully', async () => {
 
-	let actualStatusCode;
 	let actualResponseBody;
 	let kitID;
 
@@ -21,7 +21,6 @@ test('status code should receive 200 in the response code when a new kit is crea
 			},
 			body: JSON.stringify(requestBody)
 		}); 
-	actualStatusCode = await response.status;
 	actualResponseBody = await response.json();
 	kitID = await actualResponseBody["id"];
 
@@ -29,13 +28,13 @@ test('status code should receive 200 in the response code when a new kit is crea
 		console.error(error);
 	}
 
-	let actualResponseBody2;
+	let actualStatusCode;
 	try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/${kitID}`, {
 			method: 'DELETE',
 			
 		});
-		actualResponseBody2 = await response.json();
+		actualStatusCode = await response.status;
 
 	} catch (error) { 
 		console.error(error);

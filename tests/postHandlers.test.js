@@ -3,16 +3,14 @@ const config = require('../config');
 
 const requestBody = 
 
-{
-	"products": [
+
+{"products": [
 	  {
 		"id": 1,
 		"quantity": 1
 	  }
-	]
-  }
+	]}
   
-
 test('status code should receive 200 in the response code when the warehouses is checked', async () => {
 
 	let actualResponseCode;
@@ -33,7 +31,7 @@ test('status code should receive 200 in the response code when the warehouses is
 });
 
 
-test('Response body for "Everything You Need" warehouse contains the products Orange Juice etc', async () => {
+test('Response body for "Everything You Need" warehouse contains the products Orange Juice', async () => {
 
 
 

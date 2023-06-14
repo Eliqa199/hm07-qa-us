@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 const config = require('../config');
 
 const requestBody = 
@@ -5,7 +6,7 @@ const requestBody =
 {
 	"price": 15
   }
-s
+
 
 test('status code should receive 200 in the response code when the product is updated', async () => {
 
