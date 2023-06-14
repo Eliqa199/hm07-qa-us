@@ -11,9 +11,9 @@ const requestBody =
 	  }
 	]
   }
-    // put your body here ^^ Body copied from /docs
+  
 
-test('status code should be 200 in the response code', async () => {
+test('status code should receive 200 in the response code when the warehouses is checked', async () => {
 
 	let actualResponseCode;
     try {
@@ -33,7 +33,7 @@ test('status code should be 200 in the response code', async () => {
 });
 
 
-test('status code should be 200 in the response body', async () => {
+test('Response body for "Everything You Need" warehouse contains the products Orange Juice etc', async () => {
 
 
 
@@ -56,4 +56,3 @@ test('status code should be 200 in the response body', async () => {
 
 
 
-//this is complete ready for submission

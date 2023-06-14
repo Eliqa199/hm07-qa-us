@@ -5,9 +5,9 @@ const requestBody =
 {
 	"price": 15
   }
-    // put your body here ^^ Body copied from /docs
+s
 
-test('status code should be 200 in the response code', async () => {
+test('status code should receive 200 in the response code when the product is updated', async () => {
 
 	let actualResponseCode;
     try {
@@ -26,7 +26,6 @@ test('status code should be 200 in the response code', async () => {
 
 });
 
-// Checking response to be ok true on a Put request
 test('status code should be true in the response body', async () => {
 
 	let actualResponseCode;
@@ -46,4 +45,3 @@ test('status code should be true in the response body', async () => {
 expect(actualResponseCode).toEqual({"ok": true});
 
 })
-// script is ready for submission
